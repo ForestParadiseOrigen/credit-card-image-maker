@@ -7,7 +7,7 @@ const Header = () => {
           <h1 className="self-center uppercase font-extrabold max-sm:text-xl text-3xl text-zinc-800">
             Creador de tarjetas
           </h1>
-          <ButtonBlack type='submit' >Ir a GitHub</ButtonBlack>
+          <ButtonBlack type='submit' url='https://github.com/ForestParadiseOrigen/credit-card-image-maker' >Ir a GitHub</ButtonBlack>
       </header>
     </>
     );
