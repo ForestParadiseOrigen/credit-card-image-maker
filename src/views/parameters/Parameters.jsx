@@ -3,6 +3,7 @@ import { FormDataContext } from '/src/data/context/FormDataContext';
 import InputData from '../../data/documents/InputData';
 import InputColor from '../../data/documents/InputColor';
 import InputLogoData from "../../data/documents/InputLogoData";
+import InputTypeCard from "../../data/documents/inputTypeCardData"
 
 
 // Modulos con la estructura de los elementos.
@@ -48,6 +49,10 @@ const Parameters = () => {
         <option  key={logo.id} name={logo.nombre} value={logo.url}>{logo.nombre}</option>
     ));
 
+    const OptionTypeCard = InputTypeCard().map(type => (
+        <option  key={type.id} name={type.nombre}>{type.nombre}</option>
+    ));
+
     return(
         <>
             <form
@@ -81,6 +86,16 @@ const Parameters = () => {
                         </label>
                         <select className="w-full p-3 outline-none border rounded-e-lg border-zinc-400 hover:font-semibold" name="logo" onChange={handleChange} >
                             {OptionLogo}
+                        </select>
+                    </div>
+                </section>
+                <section className="min-w-96 flex flex-col pt-10">
+                    <div className="min-w-full text-sm border-zinc-800 rounded-md flex flex-nowrap align-bottom">
+                        <label className="w-64 p-3 bg-zinc-800 text-zinc-100 text-nowrap border-b-2 border-zinc-800 rounded-s-lg" htmlFor="select-logo">
+                            Elige un tipo de tarjeta: 
+                        </label>
+                        <select className="w-full p-3 outline-none border rounded-e-lg border-zinc-400 hover:font-semibold" name="typeCard" onChange={handleChange} >
+                            {OptionTypeCard}
                         </select>
                     </div>
                 </section>
