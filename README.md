@@ -15,7 +15,8 @@ Entre estos podrás encontrar los siguientes:
 2. Numero de la tarjeta.
 3. Mes y año de caducidad.
 4. Color gradeante de la tarjeta.
-5. Logo redes de pago electrónico.
+5. Logo redes de pago electrónico
+6. Tipo de tarjeta.
 
 Pero, se ha considerado no colocar la parte posterior de las tarjetas ya que solamente con la parte frontal basta y
 contiene suficiente información como para realizar una buena demostración.
