@@ -11,6 +11,7 @@ export const FormDataProvider = ({ children }) => {
         caducidad: '',
         color: '',
         logo: '',
+        typeCard: '',
     });
 
     return (

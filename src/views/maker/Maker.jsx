@@ -4,13 +4,14 @@ import { toPng } from 'html-to-image';
 
 const Maker = () => {
     const { formData } = useContext(FormDataContext);
-    const { nombre, numero, caducidad, color, logo } = formData;
+    const { nombre, numero, caducidad, color, logo, typeCard } = formData;
 
     console.log('Nombre:', nombre);
     console.log('Numero:', numero);
     console.log('Caducidad:', caducidad);
     console.log('Color:', color);
     console.log('Logo:', logo);
+    console.log('typeCard:', typeCard);
 
     //SECCION: Módulo de exportacion del elemento como imagen.
     const [image, setImage] = useState(null);
@@ -55,7 +56,7 @@ const Maker = () => {
                         >
                             <header className="grid grid-cols-2 col-span-7 justify-between">
                                 <div className='flex flex-row justify-between align-middle col-span-7 row-span-1'>
-                                    <h1 className="text-xl font-bold font-jura justify-self-start">CRÉDITO</h1>
+                                    <h1 className="text-xl font-bold font-jura justify-self-start">{typeCard || 'CRÉDITO'}</h1>
                                     <img
                                         className="w-32 h-fit justify-self-end"
                                         src={logo || 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/1200px-Mastercard_2019_logo.svg.png'}
