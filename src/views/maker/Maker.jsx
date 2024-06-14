@@ -37,7 +37,7 @@ const Maker = () => {
                 downloadElement.download = 'Tarjeta creada.jpg';
                 downloadElement.click();
                 URL.revokeObjectURL(downloadLink);
-            }, 'image/jpeg', 0.9);
+            }, 'image/png', 0.9);
         };
 
         img.src = dataUrl;
