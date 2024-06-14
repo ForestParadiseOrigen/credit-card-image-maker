@@ -32,7 +32,7 @@ frente a los cambios que desees realizar. Debajo también encontrarás un botón
 
 - El proyecto se incilializará en el puerto local 5000 y para que puedas verlo en funcionamiento, tienes que dirigirte al navegador. Usa el siguiente link: [Creador de tarjetas](http://localhost:5173/)
 
-# React + Vite
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
