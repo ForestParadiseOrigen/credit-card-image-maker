@@ -30,7 +30,7 @@ frente a los cambios que desees realizar. Debajo también encontrarás un botón
 
 - Deberás también clonar el repositorio del proyecto en en donde desees, y una vez dentro, cuando estes en la carpeta del proyecto gracias a un editor de texto o el CMD deberás clocar el siguiente comando: ``npm run dev``.
 
-- El proyecto se incilializará en el puerto local 5000 y para que puedas verlo en funcionamiento, tienes que dirigirte al navegador. Usa el siguiente link: [Creador de tarjetas](http://localhost:5173/)
+- El proyecto se incilializará en el puerto local 5137 y para que puedas verlo en funcionamiento, tienes que dirigirte al navegador. Usa el siguiente link: [Creador de tarjetas](http://localhost:5173/)
 
 # React + Vite
 
