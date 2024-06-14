@@ -43,6 +43,15 @@ const Maker = () => {
         img.src = dataUrl;
     };
 
+    // Con esta función nos encargamos de seccionar en 4 digitos los numero de tarjeta que ingresa el usuario.
+    const formatNumber = (numero) => {
+        if (numero.length > 4) {
+            return numero.match(/.{1,4}/g).join(' - ');
+        } else {
+            return numero;
+        }
+    };
+
     return (
         <>
             <main className='px-10 bg-slate-200 2xl:col-span-7 col-span-6'>
@@ -76,7 +85,7 @@ const Maker = () => {
                             <footer className='col-span-7 row-span-3 text-center'>
                                 <div className='h-full flex flex-col justify-end gap-5 '>
                                     <h1 className='font-credit-card font-bold text-xl'>{nombre || 'Tu nombre va aquí'}</h1>
-                                    <h2 className='font-credit-card font-extrabold text-4xl'>{numero ? numero.replace(/(.{4})/g, '$1 - ') : '0000 - 0000 - 0000 - 0000'}</h2>
+                                    <h2 className='font-credit-card font-extrabold text-4xl'>{numero ? formatNumber(numero) : '0000 - 0000 - 0000 - 0000'}</h2>
                                     <div>
                                         <h3 className='font-credit-card font-bold text-xl'><span className='font-credit-card font-extrabold text-end'>GOOD-THRU</span> {caducidad || '00/00'}</h3>
                                     </div>
