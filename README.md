@@ -24,6 +24,14 @@ contiene suficiente información como para realizar una buena demostración.
 Ahora sí, por otro lado, en la sección derecha podemos encontrar el modelo de la tarjeta, con actualización inmediata
 frente a los cambios que desees realizar. Debajo también encontrarás un botón de descarga que almacenará una imagen de la tarjeta directamente en tu carpeta de descargas.
 
+## ¿CÓMO PRENDER EL PROYECTO?
+
+- Deberás tener primero Node.js instalado en tu computadora, en todo caso, la pagina oficial está aquí: [Node.js](https://nodejs.org/en)
+
+- Deberás también clonar el repositorio del proyecto en en donde desees, y una vez dentro, cuando estes en la carpeta del proyecto gracias a un editor de texto o el CMD deberás clocar el siguiente comando: ``npm run dev``.
+
+- El proyecto se incilializará en el puerto local 5000 y para que puedas verlo en funcionamiento, tienes que dirigirte al navegador. Usa el siguiente link: [Creador de tarjetas](http://localhost:5173/)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
