@@ -97,6 +97,8 @@ const Parameters = () => {
                         <select className="w-full p-3 outline-none border rounded-e-lg border-zinc-400 hover:font-semibold" name="typeCard" onChange={handleChange} >
                             {OptionTypeCard}
                         </select>
+
+                        {/* En los parametros de color, lo unico que hace falta es agregar un botón para revertir los cambios realizaddos en la tarjeta. */}
                     </div>
                 </section>
             </form>
