@@ -13,6 +13,14 @@ const Maker = () => {
     console.log('Logo:', logo);
     console.log('typeCard:', typeCard);
 
+    // SECCION: Modulo encargado de organizar el numero de tarjeta
+    const formatCreditCardNumber = (num) => {
+        if (!num) {
+            return '0000 - 0000 - 0000 - 0000';
+        }
+        return num.replace(/(.{4})(?=\d)/g, '$1 - ');
+    };
+
     //SECCION: Módulo de exportacion del elemento como imagen.
     const [image, setImage] = useState(null);
     const ref = useRef(null);
@@ -76,7 +84,7 @@ const Maker = () => {
                             <footer className='col-span-7 row-span-3 text-center'>
                                 <div className='h-full flex flex-col justify-end gap-5 '>
                                     <h1 className='font-credit-card font-bold text-xl'>{nombre || 'Tu nombre va aquí'}</h1>
-                                    <h2 className='font-credit-card font-extrabold text-4xl'>{numero ? numero.replace(/(.{4})/g, '$1 - ') : '0000 - 0000 - 0000 - 0000'}</h2>
+                                    <h2 className='font-credit-card font-extrabold text-4xl'>{formatCreditCardNumber(numero)}</h2>
                                     <div>
                                         <h3 className='font-credit-card font-bold text-xl'><span className='font-credit-card font-extrabold text-end'>GOOD-THRU</span> {caducidad || '00/00'}</h3>
                                     </div>
